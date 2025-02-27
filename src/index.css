@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .ytp-more-videos-view{
+    display: none !important;
+} */
+.noScrollBar::-webkit-scrollbar {
+    display: none;
+}
