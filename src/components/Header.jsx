@@ -35,7 +35,7 @@ const Header = () => {
           <option value='hindi'>Hindi</option>
           <option value='spanish'>Spanish</option>
         </select>
-        {!searchParams.get('q') && <button className="bg-purple-700 py-2 px-3 rounded-full text-white text-sm" onClick={()=>dispatch(toggleGPTSearch())}>{GPTView?'Homepage':'GPT Search'}</button>}
+        {!searchParams.get('q') && <button className="bg-purple-700 py-2 px-3 rounded-full text-white text-sm" onClick={()=>dispatch(toggleGPTSearch())}>{GPTView?'Homepage':'AI Search'}</button>}
         <img src={user?.photoURL} alt="usericon" className="size-[2.5rem] object-cover rounded-lg" />
         <p className="font-semibold">{user?.displayName}</p>
         <button

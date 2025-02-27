@@ -27,6 +27,7 @@ const AppLayout = () => {
 
     return (
     <div>
+      <ScrollToTo/>
       <Header />
       <Outlet />
     </div>
