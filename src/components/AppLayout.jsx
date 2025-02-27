@@ -5,6 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { addUser, removeUser } from "../utils/store/userSlice";
 import { useDispatch } from "react-redux";
 import { auth } from "../utils/firebase";
+import ScrollToTop from "./ScrollToTop";
 
 const AppLayout = () => {
     const dispatch=useDispatch();
@@ -27,7 +28,7 @@ const AppLayout = () => {
 
     return (
     <div>
-      <ScrollToTo/>
+      <ScrollToTop/>
       <Header />
       <Outlet />
     </div>
