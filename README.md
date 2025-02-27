@@ -1,4 +1,4 @@
-# FlixGPT
+# FlixGenAI
 
 - Create React App
 - Configured TailwindCSS
