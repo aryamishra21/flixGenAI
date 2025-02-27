@@ -46,5 +46,5 @@
     - Search Bar 
     - Movie Suggestions
 - MoviePage
-    -MovieInfo
-    -MovieTrailer
+    - MovieInfo
+    - MovieTrailer
