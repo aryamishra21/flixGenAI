@@ -13,7 +13,7 @@ const MoviesList = ({title,movies}) => {
   return (
     <div className=' w-full text-white relative '>
         {/* <p className='font-semibold text-lg mb-8'>{title}</p> */}
-        <p className='font-semibold text-lg mb-8'>{lang[language][title]}</p>
+        <p className='font-semibold text-lg mb-8'>{lang[language][title] || title}</p>
         <div className='flex gap-6 overflow-x-scroll w-full noScrollBar mb-5 '>
             {movies?.map((movie)=>movie?.poster_path && <Link onClick={()=>dispatch(addMoviePageData(movie))} className='min-w-[10rem] h-[15rem] overflow-hidden ' to={'/movie?q='+movie.id}><img src={PosterURL+ movie?.poster_path} alt="" className='w-[10rem] h-full  hover:scale-[1.2] transition-all duration-300 object-cover' /></Link>)}
         </div>
