@@ -22,10 +22,12 @@ const Header = () => {
         })
     }
   return (
-    <div className="flex flex-col sm:flex-row fixed top-0 z-20 bg-gradient-to-b from-black from-70% w-full px-20 py-2 justify-between">
-      <Link to='/browse'><img
-        src={Logo}
-        className="w-[12rem] h-[5rem]"
+    <div className="flex flex-col sm:flex-row fixed top-0 z-20 bg-gradient-to-b from-black from-70% w-full px-20 justify-between items-center">
+      <Link to='/browse'>
+      <img
+        src='./flexgenai.webp'
+        // src={Logo}
+        className="w-[7rem] h-[7rem]"
         alt=""
       /></Link>
 { user &&    
